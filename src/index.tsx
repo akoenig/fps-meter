@@ -1,6 +1,7 @@
 import React from 'react'
 
-const PR = Math.round(window.devicePixelRatio || 1)
+const PR =
+  typeof window !== "undefined" ? Math.round(window?.devicePixelRatio) : 1;
 
 const FRAME_BAR_WIDTH = 2
 
